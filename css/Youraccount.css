@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Bahnschrift';
 }
 
 .header {
@@ -165,10 +165,10 @@ i[class*='bx-plus'] {
 
 .main {
     position: absolute;
-    top: 90px; /* adjust the value to match the height of your header */
+    top: 90px; 
     right: 0;
-    width: 84%; /* assuming 16% is the width of the left side */
-    height: calc(100vh - 90px); /* adjust the value to match the height of your header */
+    width: 84%; 
+    height: calc(100vh - 90px); 
     padding: 20px;
     box-sizing: border-box;
     background-color: #F2F2F2;

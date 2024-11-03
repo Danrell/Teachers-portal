@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Bahnschrift';
 }
 body {
   display: flex;
@@ -99,7 +99,7 @@ form{
   cursor: pointer;
 }
 .logo img{
-  width: 285px; /* Adjust according to your logo size */
+  width: 285px; 
   position: relative;
   top:  35px;
   left: 245px;
