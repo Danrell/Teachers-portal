@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/createaccount.css">
+    <link rel="stylesheet" href="../css/add.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Create Account</title>
+    <title>Add</title>
 </head>
 <body>
     <div class="header">
@@ -16,7 +16,7 @@
     <div class="left-side">
       <div class="profile">
       <button class="change-profile">
-          <img src="teacher's logo.png" alt="#" id="profile-image">
+          <img src="../teacher's logo.png" alt="#" id="profile-image">
       </button>
     </div>
     <div class="profile-details"> 
@@ -52,47 +52,38 @@
 
 
     <div class="main">
-        <div class="create-folder">
+        <div class="add-folder">
             <span class="arrow"><i class='bx bx-left-arrow-alt' ></i></span>
         </div>
         <div>
-            <span class="title">Create Account</span>
+            <span class="title">Add</span>
         </div>
 
-        <div class="details">
-        <div class="Full-name">
-            <input type="text" placeholder="First Name" name="First Name" required/>
-            <input type="text" placeholder="Last Name" name="Last Name" required/>
+        <div class="add-name">
+            <input type="text" placeholder="File name/Folder name" name="File name/Folder name" required/>
         </div>
 
-       
-        <div class="email-and-birthday">
-            <input type="text" placeholder="Email" name="Email" required/>
-            <input type="text" placeholder="Birthday" name="Birthday" required/>
+        <div class="permit">
+            <input type="text" placeholder="Public/Private" name="Public/Private" required/>
         </div>
-        
-        <div class="admin">
-            <input type="text" placeholder="ADMIN" name="ADMIN" required/>
+
+        <div id="drop-area">
+            <input type="file" id="file-input" style="display: none;" multiple >
+            <label for="file-input" class="attach-file-label">Drop Files </label>
         </div>
-        </div>
-      
+
         <div class="two-buttons">
             <button type="submit" class="cancel-btn" id="cancel-btn">Cancel</button>
-            <button type="submit" class="create-btn" id="create-btn">Create</button>
+            <button type="submit" class="add-btn" id="confirm-btn">Confirm</button>
         </div>
-
-        <div class="created" style="display: none;">
-          <p>Account Created!</p>
-          <button class="created-btn" id="created-btn">Confirm</button>
-        </div>
-
     </div>
   </div>
+
   <script>
-    const arrow = document.querySelector('.arrow');
+        const arrow = document.querySelector('.arrow');
 
         arrow.addEventListener('click', () => {
-        window.location.href = 'usermanagement.html';
+        window.location.href = 'formtemplates.html';
         });
   </script>
 </body>

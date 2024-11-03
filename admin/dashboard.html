@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/formtemplates.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Form Templates</title>
+    <title>Dashboard</title>
 </head>
 <body>
     <div class="header">
@@ -16,7 +16,7 @@
     <div class="left-side">
       <div class="profile">
       <button class="change-profile">
-          <img src="teacher's logo.png" alt="#" id="profile-image">
+          <img src="../teacher's logo.png" alt="#" id="profile-image">
       </button>
     </div>
     <div class="profile-details"> 
@@ -54,7 +54,7 @@
     <div class="main">
       <div class="logo-container">
       <div class="logo">
-       <img src="teacher's logo.png" alt="">
+       <img src="../teacher's logo.png" alt="">
       </div>
       <h1 class="title">Teacher's Portal</h1>
       <span class="description">Electronic document management</span>
@@ -63,43 +63,32 @@
       <div class="search-container">
           <input type="text" placeholder="Search" class="search">
       </div>
-
-      <div class="create-document">
-        <button type="submit" class="add-files" id="add-files">
-          Add
-          <i class='bx bx-plus'></i>
-        </button>
-    </div>
-      
+     
       <table class="document-table">
           <thead>
               <tr>
                   <th class="thname">Name</th>
                   <th class="thdate">Date</th>
-                  <th class="thstatus">Status</th>
-                  <th class="thaction">Action</th>
+                  <th class="thaction">Owner</th>
               </tr>
           </thead>
           <tbody>
+              
+              
               
               
           </tbody>
       </table>
     </div>
   </div>
-    <script>
-        const dashboardbutton = document.getElementById('dashboard-button');
-        const teacherbutton = document.getElementById('teacher-button');
+  <script>
+        const teacherButton = document.getElementById('teacher-button');
         const userButton = document.getElementById('user-button');
+        const formTemplatesButton = document.getElementById('form-templates-button');
         const trashButton = document.getElementById('trash-button');
-        const addfiles = document.querySelector('.add-files');
 
 
-        dashboardbutton.addEventListener('click', () => {
-            window.location.href = 'dashboard.html';
-        });
-
-        teacherbutton.addEventListener('click', () => {
+        teacherButton.addEventListener('click', () => {
             window.location.href = 'teacherfiles.html';
         });
 
@@ -107,13 +96,13 @@
             window.location.href = 'usermanagement.html';
         });
 
+        formTemplatesButton.addEventListener('click', () => {
+            window.location.href = 'formtemplates.html';
+        });
+
         trashButton.addEventListener('click', () => {
             window.location.href = 'trash.html';
         });
-
-        addfiles.addEventListener('click', () => {
-            window.location.href = 'add.html';
-        });
-    </script>
+  </script>
 </body>
 </html>

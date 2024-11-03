@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="../css/teacherfiles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Dashboard</title>
+    <title>Teacher Files</title>
 </head>
 <body>
     <div class="header">
@@ -16,7 +16,7 @@
     <div class="left-side">
       <div class="profile">
       <button class="change-profile">
-          <img src="teacher's logo.png" alt="#" id="profile-image">
+          <img src="../teacher's logo.png" alt="#" id="profile-image">
       </button>
     </div>
     <div class="profile-details"> 
@@ -54,7 +54,7 @@
     <div class="main">
       <div class="logo-container">
       <div class="logo">
-       <img src="teacher's logo.png" alt="">
+       <img src="../teacher's logo.png" alt="">
       </div>
       <h1 class="title">Teacher's Portal</h1>
       <span class="description">Electronic document management</span>
@@ -68,13 +68,11 @@
           <thead>
               <tr>
                   <th class="thname">Name</th>
+                  <th class="#"></th>
                   <th class="thdate">Date</th>
-                  <th class="thaction">Owner</th>
               </tr>
           </thead>
           <tbody>
-              
-              
               
               
           </tbody>
@@ -82,27 +80,27 @@
     </div>
   </div>
   <script>
-        const teacherButton = document.getElementById('teacher-button');
-        const userButton = document.getElementById('user-button');
-        const formTemplatesButton = document.getElementById('form-templates-button');
-        const trashButton = document.getElementById('trash-button');
+     const dashboardbutton = document.getElementById('dashboard-button');
+     const userButton = document.getElementById('user-button');
+     const formTemplatesButton = document.getElementById('form-templates-button');
+     const trashButton = document.getElementById('trash-button');
 
 
-        teacherButton.addEventListener('click', () => {
-            window.location.href = 'teacherfiles.html';
-        });
+     dashboardbutton.addEventListener('click', () => {
+         window.location.href = 'dashboard.html';
+     });
 
-        userButton.addEventListener('click', () => {
-            window.location.href = 'usermanagement.html';
-        });
+     userButton.addEventListener('click', () => {
+         window.location.href = 'usermanagement.html';
+     });
 
-        formTemplatesButton.addEventListener('click', () => {
-            window.location.href = 'formtemplates.html';
-        });
+     formTemplatesButton.addEventListener('click', () => {
+         window.location.href = 'formtemplates.html';
+     });
 
-        trashButton.addEventListener('click', () => {
-            window.location.href = 'trash.html';
-        });
+     trashButton.addEventListener('click', () => {
+         window.location.href = 'trash.html';
+     });
   </script>
 </body>
 </html>

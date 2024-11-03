@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/trash.css">
+    <link rel="stylesheet" href="../css/formtemplates.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Trash</title>
+    <title>Form Templates</title>
 </head>
 <body>
     <div class="header">
@@ -16,10 +16,10 @@
     <div class="left-side">
       <div class="profile">
       <button class="change-profile">
-          <img src="teacher's logo.png" alt="#" id="profile-image">
+          <img src="../teacher's logo.png" alt="#" id="profile-image">
       </button>
     </div>
-    <div class="profile-details">
+    <div class="profile-details"> 
       <span class="name">Darsen Magsakay</span>
       </div>
 
@@ -54,7 +54,7 @@
     <div class="main">
       <div class="logo-container">
       <div class="logo">
-       <img src="teacher's logo.png" alt="">
+       <img src="../teacher's logo.png" alt="">
       </div>
       <h1 class="title">Teacher's Portal</h1>
       <span class="description">Electronic document management</span>
@@ -63,6 +63,13 @@
       <div class="search-container">
           <input type="text" placeholder="Search" class="search">
       </div>
+
+      <div class="create-document">
+        <button type="submit" class="add-files" id="add-files">
+          Add
+          <i class='bx bx-plus'></i>
+        </button>
+    </div>
       
       <table class="document-table">
           <thead>
@@ -80,30 +87,19 @@
       </table>
     </div>
   </div>
-
-        <div class="restore" style="display: none;">
-          <p>Files Restored!</p>
-          <button class="confirm-btn" id="confirm-btn">Confirm</button>
-        </div>
-
-        <div class="delete" style="display: none;">
-          <p>Are you sure you want to delete this files?</p>
-          <button class="cancel-btn" id="cancel-btn">Cancel</button>
-          <button class="confirmd-btn" id="confirmd-btn">Confirm</button>
-        </div>
-
-  <script>
+    <script>
         const dashboardbutton = document.getElementById('dashboard-button');
-        const teacherButton = document.getElementById('teacher-button');
+        const teacherbutton = document.getElementById('teacher-button');
         const userButton = document.getElementById('user-button');
-        const formtemplatesButton = document.getElementById('form-templates-button');
+        const trashButton = document.getElementById('trash-button');
+        const addfiles = document.querySelector('.add-files');
 
 
         dashboardbutton.addEventListener('click', () => {
             window.location.href = 'dashboard.html';
         });
 
-        teacherButton.addEventListener('click', () => {
+        teacherbutton.addEventListener('click', () => {
             window.location.href = 'teacherfiles.html';
         });
 
@@ -111,10 +107,13 @@
             window.location.href = 'usermanagement.html';
         });
 
-        formtemplatesButton.addEventListener('click', () => {
-            window.location.href = 'formtemplates.html';
+        trashButton.addEventListener('click', () => {
+            window.location.href = 'trash.html';
         });
-  </script>
 
+        addfiles.addEventListener('click', () => {
+            window.location.href = 'add.html';
+        });
+    </script>
 </body>
 </html>
