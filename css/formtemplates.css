@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    background-color: #4CAF50;
+    padding: 45px;
+  }
+.left-side{
+    background-color: #E7E6E6;
+    max-width: 16%;
+    height: 90.2vh;
+}
+.left-side .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.change-profile {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer; 
+}
+.change-profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    mix-blend-mode: multiply;
+}
+.profile-details{
+    text-align: center;
+    margin-top: 20px;
+}
+.profile-details .name{
+    font-weight: bold;
+    font-size: 25px;
+}
+.role-details{
+    text-align: center;
+    margin-top: 8px;
+}
+.role-details .role{
+    font-size: 18px;
+}
+hr{
+    margin-top: 5px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttons{
+    margin-top: 70px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard .dashboard-button{
+    width: 250px;
+    height: 50px;
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.files .teacher-button{
+    width: 250px;
+    height: 50px;
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.user .user-button{
+    width: 250px;
+    height: 50px;
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.form-templates .form-templates-button{
+    width: 250px;
+    height: 50px;
+    background-color: #C5E0B4; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.trash .trash-button{
+    width: 250px;
+    height: 50px;
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.logout {
+    margin-top: 40px;
+    text-align: center;
+  } 
+  
+.logout .logout-button{
+    width: 150px;
+    height: 50px;
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;                                                                                    
+}
+.search-container input[type="text"] {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: solid 1px
+}
+.search-container input[type="text"]::placeholder {
+    font-style: italic;
+    padding-left: 15px;
+}
+.create-document{
+    padding-bottom: 5px;
+}
+.add-files{
+    position: relative;
+    bottom: 17px;
+    width: 100px;
+    height: 40px;
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+i[class*='bx-plus'] {
+   position: absolute;
+   right: 65px;
+   top: 11px;
+   font-size: 18px;
+   opacity: 0.7;
+}
+
+.main {
+    position: absolute;
+    top: 90px; /* adjust the value to match the height of your header */
+    right: 0;
+    width: 84%; /* assuming 16% is the width of the left side */
+    height: calc(100vh - 90px); /* adjust the value to match the height of your header */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+}
+.logo-container {
+    margin-right: 90px;
+    display: flex; /* add this line to make the elements flexible */
+    align-items: center; /* add this line to center the elements horizontally */
+    justify-content: center; /* add this line to center the elements vertically */
+}
+.logo img{
+    width: 150px; /* Adjust according to your logo size */
+    position: relative;
+    top:  -15px;
+    left: 155px;
+}
+.title{
+    position: relative;
+    top: -55px;
+    left: 150px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.description{
+    position: relative;
+    top: -20px;
+    left: -55px;
+    font-size: 16px;
+}
+  .document-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.document-table th, .document-table td {
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    table-layout: fixed;
+}
+.thname {
+    text-align: left;
+    position: relative;
+    right: 10px;
+}
+
+.thdate {
+  text-align: center;
+  position: relative;
+  right: 40px;
+}
+
+.thaction {
+    position: relative;
+    right: 40px;
+    text-align: right;
+}

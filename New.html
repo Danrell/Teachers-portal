@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <link rel="stylesheet" href="css/New.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="header">
+        
+    </div>
+  <div class="container">
+    <div class="left-side">
+      <div class="profile">
+      <button class="change-profile">
+          <img src="teacher's logo.png" alt="#" id="profile-image">
+      </button>
+    </div>
+    <div class="profile-details"> 
+      <span class="name">Darsen Magsakay</span>
+      </div>
+
+      <div  class="role-details">
+          <span class="role">Teacher 1</span>
+      </div>
+      <hr>
+
+    <div class="buttons">
+      <div class="home">
+          <button type="submit" class="home-button">Home</button>
+      </div>
+    <div class="files">
+          <button type="submit" class="files-button">Files</button>
+    </div>
+    <div class="archive">
+          <button type="submit" class="archive-button">archive</button>
+    </div>
+
+    <div class="logout">
+          <button type="submit" class="logout-button" id="logout-button">Log Out</button>
+    </div>
+      </div>
+    </div>
+
+    <div class="main">
+        <div class="new-folder">
+            <span class="arrow"><i class='bx bx-left-arrow-alt' ></i></span>
+        </div>
+        <div>
+            <span class="title">New</span>
+        </div>
+        <div class="file-name">
+            <input type="text" placeholder="File name/Folder name" name="File name/Folder name" required/>
+        </div>
+
+        <div id="drop-area">
+          <input type="file" id="file-input" style="display: none;" multiple >
+          <label for="file-input" class="attach-file-label">Drop Files </label>
+      </div>
+
+        <div class="two-buttons">
+            <button type="submit" class="cancel-btn" id="cancel-btn">Cancel</button>
+            <button type="submit" class="add-btn" id="add-btn">Add</button>
+        </div>
+    </div>
+  </div>
+  <script>
+    const arrow = document.querySelector('.arrow');
+
+  arrow.addEventListener('click', () => {
+  window.location.href = 'Home.html';
+  });
+
+  
+  </script>
+</body>
+</html>

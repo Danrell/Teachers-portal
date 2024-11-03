@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header {
+    background-color: #4CAF50;
+    padding: 45px;
+  }
+.left-side{
+    background-color: #E7E6E6;
+    max-width: 16%;
+    height: 90.2vh;
+}
+.left-side .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.change-profile {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer; 
+}
+.change-profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    mix-blend-mode: multiply;
+}
+.profile-details{
+    text-align: center;
+    margin-top: 20px;
+}
+.profile-details .name{
+    font-weight: bold;
+    font-size: 25px;
+}
+.role-details{
+    text-align: center;
+    margin-top: 8px;
+}
+.role-details .role{
+    font-size: 18px;
+}
+hr{
+    margin-top: 5px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttons{
+    margin-top: 70px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.home .home-button{
+    width: 250px;
+    height: 50px;
+    background-color: #C5E0B4;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+}
+
+.files .files-button{
+    width: 250px;
+    height: 50px;
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.archive .archive-button{
+    width: 250px;
+    height: 50px;
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.logout {
+    position: relative;
+    top: 180px;
+    text-align: center;
+  }
+  
+.logout .logout-button{
+    width: 150px;
+    height: 50px;
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.main {
+    position: absolute;
+    top: 90px; 
+    right: 0;
+    width: 84%; 
+    height: calc(100vh - 90px); 
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+}
+.new-folder .arrow i.bx.bx-left-arrow-alt {
+    position: relative;
+    top: -25px;
+    left: -20px;
+    color: #000000;
+    font-size: 90px;
+    cursor: pointer;
+  }
+  .title{
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 30px;
+  }
+  .file-name{
+    margin-top: 90px;
+    margin-left: 40px;
+  }
+  .file-name input[type="text"] {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .file-name input[type="text"]::placeholder {
+    font-style: italic;
+  }
+  #drop-area {
+    width: 460px;
+    height: 180px;
+    margin-top: 65px;
+    margin-left: 40px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #aaa;
+    font-size: 16px;
+}
+#drop-area :hover{
+    color: #000;
+    }
+
+#drop-area label{
+    cursor: pointer;
+    }
+.two-buttons{
+    position: absolute;
+    bottom: 30px;
+    left: 650px;
+                                                             
+}
+.two-buttons button[type="submit"] {
+    width: 250px;
+    height: 50px;
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+    margin-right: 40px;
+}

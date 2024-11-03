@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/editprofile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Edit Profile</title>
+</head>
+<body>
+    <div class="header">
+        
+    </div>
+  <div class="container">
+    <div class="left-side">
+      <div class="profile">
+      <button class="change-profile">
+          <img src="teacher's logo.png" alt="#" id="profile-image">
+      </button>
+    </div>
+    <div class="profile-details"> 
+      <span class="name">Darsen Magsakay</span>
+      </div>
+
+      <div  class="role-details">
+          <span class="role">Teacher 1</span>
+      </div>
+      <hr>
+
+    <div class="buttons">
+      <div class="dashboard">
+          <button type="submit" class="dashboard-button" id="dashboard-button">Dashboard</button>
+      </div>
+    <div class="files">
+          <button type="submit" class="teacher-button" id="teacher-button">Teacher Files</button>
+    </div>
+    <div class="user">
+          <button type="submit" class="user-button" id="user-button">User Management</button>
+    </div>
+    <div class="form-templates">
+          <button type="submit" class="form-templates-button" id="form-templates-button">Form Templates</button>
+    </div>
+    <div class="trash">
+        <button type="submit" class="trash-button" id="trash-button">Trash</button>
+    </div>
+    <div class="logout">
+          <button type="submit" class="logout-button" id="logout-button">Log Out</button>
+    </div>
+      </div>
+    </div>
+
+
+    <div class="main">
+        <div class="create-folder">
+            <span class="arrow"><i class='bx bx-left-arrow-alt' ></i></span>
+        </div>
+        <div>
+            <span class="title">Edit Profile</span>
+        </div>
+
+        <div class="details">
+        <div class="Full-name">
+            <input type="text" placeholder="First Name" name="First Name" required/>
+            <input type="text" placeholder="Last Name" name="Last Name" required/>
+        </div>
+
+       
+        <div class="email-and-birthday">
+            <input type="text" placeholder="Email" name="Email" required/>
+            <input type="text" placeholder="Birthday" name="Birthday" required/>
+        </div>
+        
+        <div class="admin">
+            <input type="text" placeholder="ADMIN" name="ADMIN" required/>
+        </div>
+        </div>
+      
+        <div class="two-buttons">
+            <button type="submit" class="cancel-btn" id="cancel-btn">Cancel</button>
+            <button type="submit" class="update-btn" id="update-btn">Update</button>
+        </div>
+
+        <div class="update" style="display: none;">
+            <p>Are you sure you want to update this account?</p>
+            <button class="cancels-btn" id="cancels-btn">Cancel</button>
+            <button class="confirm-btn" id="confirm-btn">Confirm</button>
+          </div>
+
+    </div>
+  </div>
+  <script>
+    const arrow = document.querySelector('.arrow');
+
+        arrow.addEventListener('click', () => {
+        window.location.href = '.html';
+        });
+  </script>
+</body>
+</html>
