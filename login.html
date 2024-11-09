@@ -8,33 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <div class="outer-box">
-    <div class="inner-box">
-      <h1 class="login-heading">Login</h1>
-      <form action="./users/Home.html" method="post">
-        <div class="form-group">
-          <input type="text" placeholder="Username" name="username" required>
-        </div>
-        <div class="form-group">
-          <div class="password-container">
-            <input type="password" placeholder="Password" name="password" id="pwd" required>
-            <span class="toggle-password"><i class="fas fa-eye"></i></span>
-          </div>
-        </div>
-        <div class="form-group">
-          <a href="Forgotpassword.html" class="forgot-password">Forgot Password?</a>
-        </div>
-        <div class="form-group">
-          <button type="submit" class="login-button">Login</button>
-        </div>
-      </form>
+  <div  id="outerbox">
+    <div id="innerbox">
+        <h1 class="login-heading">Login</h1>
+    <form action="./users/Home.html" method="post">
+    <div class="form-group">
+     <input type="text" placeholder="Username" name="username" required>
     </div>
+     <div class="form-group">
+        <input type="password" placeholder="Password" name="password" id="pwd" required>
+        <span class="toggle-password"><i class="fas fa-eye"></i></span>
+    </div>
+    <div class="form-group">
+  <a href="Forgotpassword.html" class="forgot-password">Forgot Password?</a>
+</div>
+<div class="form-group">
+  <button type="submit" class="login-button">Login</button>
+    </div>
+    </form>
+    </div>
+
     <div class="logo">
-      <img src="teacher's logo.png" alt="Logo">                                                                                           
-      <h2 class="title">Teacher's Portal</h2>                                                                                   
-      <p class="description">Electronic document management</p>
-    </div>
-  </div>
+        <img src="teacher's logo.png" alt="Logo">                                                                                           
+        <h2 class="title">Teacher's Portal</h2>                                                                                   
+        <p class="description">Electronic document management</p>
+      </div>
+</div>
   <script src="js/login.js"></script>
 
 </body>

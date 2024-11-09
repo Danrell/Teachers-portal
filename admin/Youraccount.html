@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Youraccount.css">
+    <link rel="stylesheet" href="../css/Youraccount.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Your Account</title>
@@ -16,7 +16,7 @@
     <div class="left-side">
       <div class="profile">
       <button class="change-profile">
-          <img src="teacher's logo.png" alt="#" id="profile-image">
+          <img src="../teacher's logo.png" alt="#" id="profile-image">
       </button>
     </div>
     <div class="profile-details"> 
@@ -101,6 +101,11 @@
        document.getElementById('edit-btn').addEventListener('click', function() {
          var confirmEditAccount = document.querySelector('.confirm-edit-account');
          confirmEditAccount.style.display = confirmEditAccount.style.display === 'block' ? 'none' : 'block';
+       });
+
+       document.getElementById('cancel-btn').addEventListener('click', function() {
+         var confirmEditAccountDiv = document.querySelector('.confirm-edit-account');
+         confirmEditAccountDiv.style.display = 'none';
        });
   </script>
 </body>
