@@ -50,7 +50,6 @@ form{
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  font-style: italic;
 }
 .form-group .confirm-password input[type="password"],
 .form-group .confirm-password input[type="text"] {
@@ -59,7 +58,6 @@ form{
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  font-style: italic;
 }
 input[type="password"]::placeholder{
   font-style: italic;

@@ -7,16 +7,23 @@
     font-family: 'Bahnschrift';
 }
 
-.header {
-    background-color: #4CAF50;
+#header{
     padding: 45px;
-  }
-.left-side{
-    background-color: #E7E6E6;
-    max-width: 16%;
-    height: 90.2vh;
+    width: 100%;
+    background-color: #4CAF50;
 }
-.left-side .profile{
+#sidebar{
+    height: 90.2vh;
+    width: 16%;
+    background-color: #E7E6E6;
+    float: left;
+}
+#main{
+    height: 90.2vh;
+    width: 100%;
+    background-color:#F2F2F2;
+}
+#sidebar  .profile{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,34 +75,32 @@ hr{
 .home .home-button{
     width: 250px;
     height: 50px;
+    color: #595959;
     background-color: #D9D9D9;
     padding: 10px 20px;
     border: none;
     border-radius: 150px;
     cursor: pointer;
-    color: #595959;
 }
 .files .files-button{
     width: 250px;
     height: 50px;
+    color: #595959;
     background-color: #C5E0B4;
     padding: 10px 20px;
     border: none;
     border-radius: 150px;
     cursor: pointer;
-    color: #595959;
-
 }
 .archive .archive-button{
     width: 250px;
     height: 50px;
+    color: #595959;
     background-color: #D9D9D9;
     padding: 10px 20px;
     border: none;
     border-radius: 150px;
     cursor: pointer;
-    color: #595959;
-
 }
 .logout {
     position: relative;
@@ -112,13 +117,34 @@ hr{
     border-radius: 150px;
     cursor: pointer;
     color: #595959;
-
+}
+#main .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    margin-bottom: 60px;
+}
+#main .logo img{
+    width: 150px;
+}
+.title{
+    position: absolute;
+    top: 130px;
+    right: 33.5%;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.description{
+    position: relative;
+    top: 10px;
 }
 .search-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 45px;                                                                                    
+    margin-bottom: 19px;                                                                                    
 }
 .search-container input[type="text"] {
     width: 40%;
@@ -133,12 +159,10 @@ hr{
     padding-left: 15px;
     color: #A6A6A6;
 }
-.add-document{
-    padding-top: 5px;
-}
 .add-files{
     position: relative;
-    bottom: 22px;
+    bottom: 20px;
+    left: 20px;
     width: 100px;
     height: 40px;
     background-color: #D9D9D9;
@@ -157,44 +181,8 @@ i[class*='bx-plus'] {
    font-size: 20px;
    opacity: 0.7;
 }
-
-.main {
-    position: absolute;
-    top: 90px; 
-    right: 0;
-    width: 84%; 
-    height: calc(100vh - 90px); 
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #F2F2F2;
-}
-.logo-container {
-    margin-right: 90px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-}
-.logo img{
-    width: 150px; 
-    position: relative;
-    top:  -15px;
-    left: 155px;
-}
-.title{
-    position: relative;
-    top: -55px;
-    left: 150px;
-    font-weight: bold;
-    font-size: 30px;
-}
-.description{
-    position: relative;
-    top: -20px;
-    left: -55px;
-    font-size: 16px;
-}
-  .document-table {
-    width: 100%;
+.document-table {
+    width: 84%;
     border-collapse: collapse;
     table-layout: fixed;
 }
@@ -203,20 +191,12 @@ i[class*='bx-plus'] {
     border-bottom: 2px solid #ddd;
     table-layout: fixed;
 }
-.thname {
+.thname{
     text-align: left;
-    position: relative;
-    right: 10px;
 }
-
-.thdate {
-  text-align: center;
-  position: relative;
-  right: 40px;
+.thdate{
+    text-align: center;
 }
-
-.thaction {
-    position: relative;
-    right: 40px;
+.thaction{
     text-align: right;
 }
