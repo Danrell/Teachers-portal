@@ -36,7 +36,7 @@ form{
     margin-top: 55px;
 }
 .form-group {
-  text-align: center;
+    text-align: center;
 }
 .form-group .new-password, .form-group .confirm-password {
     display: flex;
@@ -45,40 +45,37 @@ form{
 }
 .form-group .new-password input[type="password"],
 .form-group .new-password input[type="text"] {
-  width: 90%;
-  height: 50px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 .form-group .confirm-password input[type="password"],
 .form-group .confirm-password input[type="text"] {
-  width: 90%;
-  height: 50px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 input[type="password"]::placeholder{
-  font-style: italic;
+    font-style: italic;
 }
-.new-password .toggle-password {
-    position: absolute;
-    left: 41%;
-    top: 37.7%;
-    font-size: 18px;
-    cursor: pointer;
-    opacity: 0.5;
-  }
+.new-password, .confirm-password {
+  position: relative;  /* Add this to make the container relative */
+}
+.new-password .toggle-password,
 .confirm-password .toggle-passwords {
     position: absolute;
-    left: 41%;
-    top: 46.5%;
+    right: 8%;  /* Change from left positioning to right */
+    top: 50%;   /* Center vertically */
+    transform: translateY(-50%);  /* Perfect vertical centering */
     font-size: 18px;
     cursor: pointer;
     opacity: 0.5;
-  }
-  .form-group .login-button {
+}
+.form-group .login-button {
     margin-top: 27px;
     background-color: #C5E0B4;
     color: #595959;
@@ -87,24 +84,145 @@ input[type="password"]::placeholder{
     border: none;
     border-radius: 35px;
     cursor: pointer;
-  }
-
+}
 .logo img{
     width: 285px; 
     position: absolute;
-    top:  20%;
+    top: 20%;
     left: 55.5%;
-  }
-  .title{
+}
+.title{
     position: absolute;
     top: 55.5%;
     left: 57.5%;
     font-weight: bold;
     font-size: 30px;
-  }
-  .description{
+}
+.description{
     position: absolute;
     top: 59.5%;
     left: 57.1%;
     font-size: 15px;
-  }
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large screens (1200px and up) */
+@media screen and (max-width: 1200px) {
+    #outerbox {
+        width: 80vw;
+    }
+    #innerbox {
+        width: 25vw;
+        margin-left: 100px;
+    }
+    .logo img {
+        width: 240px;
+        left: 53%;
+    }
+    .title {
+        left: 55%;
+    }
+    .description {
+        left: 54.5%;
+    }
+    
+}
+
+/* Medium screens (992px and up) */
+@media screen and (max-width: 992px) {
+    #outerbox {
+        width: 90vw;
+        height: 70vh;
+        border-radius: 40px;
+    }
+    #innerbox {
+        width: 30vw;
+        margin-left: 50px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .logo img {
+        width: 200px;
+        left: 50%;
+    }
+    .title {
+        font-size: 25px;
+        left: 52%;
+    }
+    .description {
+        left: 51.5%;
+    }
+    .new-password .toggle-password,
+    .confirm-password .toggle-passwords {
+        right: 8%;  /* Adjust if needed for this breakpoint */
+    }
+}
+
+/* Small screens (768px and up) */
+@media screen and (max-width: 768px) {
+    #outerbox {
+        width: 95vw;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #innerbox {
+        width: 90%;
+        margin: 0;
+        padding: 20px;
+        height: auto;
+    }
+    .logo {
+        position: relative;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .logo img {
+        position: static;
+        width: 180px;
+    }
+    .title {
+        position: static;
+        margin-top: 20px;
+    }
+    .description {
+        position: static;
+        margin-top: 10px;
+    }
+    .new-password .toggle-password,
+    .confirm-password .toggle-passwords {
+        right: 8%;  /* Adjust if needed for this breakpoint */
+    }
+}
+
+/* Extra small screens (576px and up) */
+@media screen and (max-width: 576px) {
+    #outerbox {
+        border-radius: 20px;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 28px;
+        padding-top: 30px;
+    }
+    .form-group .login-button {
+        width: 70%;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .description {
+        font-size: 14px;
+    }
+    .new-password .toggle-password,
+    .confirm-password .toggle-passwords {
+        right: 10%;  /* Slightly adjusted for smaller screens */
+    }
+}

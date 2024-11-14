@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Bahnschrift';
 }
+
 body{
     display: flex;
     justify-content: center;
@@ -13,6 +14,7 @@ body{
     height: 100vh;
     background-color: #f7f7f7;
 }
+
 #outerbox {
     width: 67vw;
     height: 65vh;
@@ -20,12 +22,14 @@ body{
     border: 1px solid #ddd;
     border-radius: 80px;
 }
+
 #innerbox {
     width: 19.27vw;
     height: 65vh;
     background-color: #4CAF50;
     margin-left: 150px;
 }
+
 h1{
     display: flex;
     justify-content: center;
@@ -33,14 +37,18 @@ h1{
     padding-right: 200px;
     font-size: 45px;
 }
+
 form{
     margin-top: 50px;
 }
+
 .form-group{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    position: relative; /* Added to help position the toggle icon */
 }
+
 input[type="text"], input[type="password"]{
     width: 90%;
     height: 50px;
@@ -50,26 +58,33 @@ input[type="text"], input[type="password"]{
     border-radius: 10px;
     border-color: #BFBFBF;
 }
+
 input[type="text"]::placeholder, input[type="password"]::placeholder {
     font-style: italic;
-  }
+}
+
 .toggle-password{
     position: absolute;
-    top: 46.5%;
-    left: 41%;
+    top: 50%;
+    right: 8%; /* Changed from left to right positioning */
+    transform: translateY(-50%); /* Center vertically */
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.4;
+    z-index: 1; /* Ensure icon stays above input */
 }
+
 .form-group .forgot-password {
     font-style: italic;
     color: rgb(0, 0, 0);
     font-size: 13px;
     text-decoration: none;
-  }
-  .form-group .forgot-password:hover {
+}
+
+.form-group .forgot-password:hover {
     text-decoration: underline;
-  }
-  .form-group .login-button {
+}
+
+.form-group .login-button {
     background-color: #C5E0B4;
     color: #595959;
     width: 50%;
@@ -77,23 +92,183 @@ input[type="text"]::placeholder, input[type="password"]::placeholder {
     border: none;
     border-radius: 35px;
     cursor: pointer;
-  }
-  .logo img{
+}
+
+.logo img{
     width: 285px; 
     position: absolute;
-    top:  20%;
+    top: 20%;
     left: 55.5%;
-  }
-  .title{
+}
+
+.title{
     position: absolute;
     top: 55.5%;
     left: 57.5%;
     font-weight: bold;
     font-size: 30px;
-  }
-  .description{
+}
+
+.description{
     position: absolute;
     top: 59.5%;
     left: 57.1%;
     font-size: 15px;
-  }
+}
+
+/* Large screens (1200px and below) */
+@media screen and (max-width: 1200px) {
+    #outerbox {
+        width: 80vw;
+    }
+    #innerbox {
+        width: 25vw;
+        margin-left: 100px;
+    }
+    .logo img {
+        width: 240px;
+        left: 52%;
+    }
+    .title {
+        left: 54%;
+    }
+    .description {
+        left: 53.5%;
+    }
+    .toggle-password {
+        right: 10%;
+    }
+}
+
+/* Medium screens (992px and below) */
+@media screen and (max-width: 992px) {
+    #outerbox {
+        width: 90vw;
+        border-radius: 60px;
+    }
+    #innerbox {
+        width: 30vw;
+        margin-left: 50px;
+    }
+    h1 {
+        padding-right: 100px;
+        font-size: 40px;
+    }
+    .logo img {
+        width: 200px;
+        left: 50%;
+    }
+    .title {
+        left: 52%;
+        font-size: 26px;
+    }
+    .description {
+        left: 51.5%;
+    }
+    .toggle-password {
+        right: 12%;
+    }
+}
+
+/* Small screens (768px and below) */
+@media screen and (max-width: 768px) {
+    #outerbox {
+        width: 95vw;
+        border-radius: 40px;
+        height: 80vh;
+    }
+    #innerbox {
+        width: 35vw;
+        margin-left: 30px;
+        height: 80vh;
+    }
+    h1 {
+        padding-right: 50px;
+        font-size: 35px;
+    }
+    .logo img {
+        width: 160px;
+        left: 48%;
+        top: 25%;
+    }
+    .title {
+        left: 50%;
+        top: 58%;
+        font-size: 22px;
+    }
+    .description {
+        left: 49.5%;
+        top: 62%;
+    }
+    .toggle-password {
+        right: 15%;
+    }
+}
+
+/* Extra small screens (576px and below) */
+@media screen and (max-width: 576px) {
+    #outerbox {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #innerbox {
+        width: 100%;
+        height: 60vh;
+        margin-left: 0;
+    }
+    h1 {
+        padding-right: 0;
+        font-size: 32px;
+    }
+    .form-group .login-button {
+        width: 70%;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+    }
+    .logo img {
+        position: static;
+        width: 140px;
+    }
+    .title {
+        position: static;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .description {
+        position: static;
+        margin-top: 10px;
+    }
+    .toggle-password {
+        right: 10%;
+    }
+    .form-group {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Handle very small screens */
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 28px;
+        padding-top: 40px;
+    }
+    .form-group .login-button {
+        width: 80%;
+    }
+    .logo img {
+        width: 120px;
+    }
+    .toggle-password {
+        right: 12%;
+    }
+}
